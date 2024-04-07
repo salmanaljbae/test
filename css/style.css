@@ -1,0 +1,324 @@
+*{
+    margin: 0;
+
+}
+
+:root{
+    --primary_colo: #e04477;
+    --white_text: #ffffff;
+}
+
+.fatherNav{
+    display: flex;
+    justify-content: center;
+    background-color: #212020;
+    width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    width: 92%;
+    height: 10vh;
+    background-color: #212020;
+    padding: 10px;
+    /*flex-wrap: wrap;*/
+}
+nav li{
+    display: inline-block;
+    margin: 8px;
+    /*background-color: red;*/
+}
+nav  a{
+    text-decoration: none;
+    color: #756c6c;
+    font-size: 12px;
+    /*margin: 12px;*/
+}
+.headerImage{
+    border-radius: 50%;
+    display: inline-block;
+    width: 25%;
+    margin-left: 8px;
+}
+.logo{
+    width: 55%;
+    margin-top: 5% ;
+    margin-bottom: 5%;
+}
+nav input{
+    margin: 5%;
+    padding: 6px;
+    background-color: #282626;
+    border: none;
+    border-radius: 20px ;
+}
+.navList{
+    display: flex;
+}
+.profile{
+    height: 34px;
+    background-color: #3d3939;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 25px;
+}
+
+
+/*the Hero bag*/
+body{
+    background-color: #212020 ;
+    /*background-image: url("images/R.jpeg") no-repeate center;*/
+}
+
+.secFather{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+section{
+    width: 92%;
+    background-color: #28292b;
+    display: flex;
+    justify-content: center;
+    border-radius: 18px;
+}
+
+.centerParentAll{
+    width: 94%;
+}
+
+.welcomeSec{
+    width: 100%;
+    height: 42vh;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+    background-image: url("../images/banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 18px;
+    position: relative;
+}
+.allTextParent{
+    position: absolute;
+    top:24%;
+    left: 4%;
+}
+.textWelcomeTo{
+    color: var(--white_text);
+    margin-bottom: 2vh;
+    font-size: 9px;
+    font-weight: 100;
+}
+.textBrows{
+    color: var(--primary_colo);
+    font-weight: bold;
+    font-size: 20px;
+}
+.textBrows:after{
+    content: " OUR POPULAR";
+    color: var(--white_text);
+}
+.textGamesHere{
+    color: var(--white_text);
+    font-weight: bold;
+}
+.btnBrowsNow{
+    background-color: var(--primary_colo);
+    color: var(--white_text);
+    border: none;
+    border-radius: 20px;
+    font-size: 8px;
+    margin-top: 2vh;
+    padding: 5px 16px 5px 16px;
+}
+
+/*section_tow*/
+.mostPopularParentAll{
+    background-color: #212020;
+    padding: 8px 8px 4vh 8px;
+    border-radius: 10px;
+    position: relative;
+
+
+}
+.mostPopularTitle{
+    font-size: 24px;
+    color: var(--white_text);
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 4px 0 12px 6px;
+}
+.mostPopularTitle:after{
+    content: "Right Now";
+    display: inline-block;
+    color: var(--primary_colo);
+    font-size: 24px;
+    font-weight:bold;
+}
+
+.cardsGrid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(220px,25%));
+}
+
+.card{
+    background-color: #28292b;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    margin: 6px;
+}
+.cardCenter{
+    margin:4%;
+}
+
+.cardImage{
+    border-radius: 14px;
+    margin-top: 14px;
+}
+.rateRow{
+    display: flex;
+    justify-content: space-between;
+}
+.downloadRow{
+    display: flex;
+    justify-content: space-between;
+    /*padding:px ;*/
+}
+.rateRowText{
+    color: var(--white_text);
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+.rateRowNum{
+    color: var(--white_text);
+    font-size: 12px;
+}
+.downloadRowText{
+    font-size: 12px;
+    color: #625a5a;
+    margin-top: 4px;
+}
+
+section .mostPopularParentAll button{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%,50%);
+    background-color: var(--primary_colo);
+    color: var(--white_text);
+    border: none;
+    border-radius: 20px;
+    font-size: 8px;
+    margin-top: 2vh;
+    padding: 8px 18px 8px 18px;
+
+}
+
+/*section_three*/
+.libraryParentAll{
+    background-color: #212020;
+    padding: 2% 8% 6% 2% ;
+    border-radius: 10px;
+    position: relative;
+    margin-top: 7vh;
+    margin-bottom: 7vh;
+}
+.libraryTitle{
+    font-size: 24px;
+    color: var(--white_text);
+    text-decoration: underline;
+    font-weight: bold;
+    margin: 4px 0 12px 6px;
+}
+.libraryTitle:after{
+    content: " Library";
+    display: inline-block;
+    color: var(--primary_colo);
+    font-size: 24px;
+    font-weight:bold;
+}
+
+.libraryMainRow{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4vh;
+}
+.blockOne{
+    display: flex;
+}
+.libraryImage{
+    /*display: inline;*/
+    width: 4vw;
+    border-radius: 12px;
+    margin-right: 12px;
+}
+.rowOneText{
+    color: var(--white_text);
+    font-size: 12px;
+    font-weight: bold;
+    margin-top: 4px;
+}
+.rowTowText{
+    font-size: 10px;
+    color: #625a5a;
+    margin-top: 4px;
+}
+.blockFive{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10vw;
+    /*background-color: #d15db0;*/
+}
+.downloadBtn{
+    background-color: transparent;
+    border: #625a5a solid 2px;
+    padding: 8px 1px 8px 1px;
+    width: 100%;
+    border-radius: 30px;
+    color: #625a5a;
+    font-size: 10px;
+}
+.downloadBtn2{
+    background-color: transparent;
+    border: var(--primary_colo) solid 2px;
+    padding: 8px 1px 8px 1px;
+    width: 100%;
+    border-radius: 30px;
+    color: var(--primary_colo);
+    font-size: 10px;
+}
+.libraryBtn{
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translate(50%,50%);
+    background-color: var(--primary_colo);
+    color: var(--white_text);
+    border: none;
+    border-radius: 20px;
+    font-size: 8px;
+    margin-top: 2vh;
+    padding: 8px 18px 8px 18px;
+}
+
+/*footer*/
+footer{
+    margin: 2%;
+}
+.footerRow{
+    display: flex;
+    margin-top: 4px;
+    justify-content: center;
+}
+.footerText{
+    color: var(--white_text);
+    font-size: 10px;
+    font-weight: 100;
+}
